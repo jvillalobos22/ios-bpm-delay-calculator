@@ -31,4 +31,9 @@ class BeatCalculator {
             noteLengths.append(newNoteLength)
         }
     }
+    
+    func getSortedNoteLengths() -> [NoteLength] {
+        let sortedNoteLengths = noteLengths.sorted(by: { $0.noteCoefficient > $1.noteCoefficient })
+        return sortedNoteLengths
+    }
 }

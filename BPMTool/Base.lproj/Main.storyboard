@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="een-QQ-4YC">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -178,6 +178,86 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Beat Calculator View Controller-->
+        <scene sceneID="3f7-I9-HA3">
+            <objects>
+                <viewController id="een-QQ-4YC" customClass="BeatCalculatorViewController" customModule="BPMTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rzs-xB-ByF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-zf-tyy">
+                                <rect key="frame" x="16" y="250" width="343" height="528"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="528" id="xZV-ag-yUE"/>
+                                </constraints>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkK-gZ-Lat">
+                                <rect key="frame" x="16" y="44" width="343" height="206"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="--" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhI-QO-B3e">
+                                        <rect key="frame" x="0.0" y="128.66666666666666" width="343" height="61.333333333333343"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="bpmFieldChanged:" destination="een-QQ-4YC" eventType="editingChanged" id="4oq-It-GXw"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZk-9v-akY">
+                                        <rect key="frame" x="0.0" y="93.666666666666657" width="343" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lhI-QO-B3e" firstAttribute="top" secondItem="BZk-9v-akY" secondAttribute="bottom" constant="8" id="LC1-Ke-y0R"/>
+                                    <constraint firstItem="lhI-QO-B3e" firstAttribute="width" secondItem="UkK-gZ-Lat" secondAttribute="width" id="b3y-G8-Udf"/>
+                                    <constraint firstItem="BZk-9v-akY" firstAttribute="top" secondItem="UkK-gZ-Lat" secondAttribute="top" constant="93.666666666666657" id="djP-Ob-RYt"/>
+                                    <constraint firstAttribute="bottom" secondItem="lhI-QO-B3e" secondAttribute="bottom" constant="16" id="fwO-jC-Gr3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UkK-gZ-Lat" firstAttribute="leading" secondItem="sKm-zA-fGp" secondAttribute="leading" constant="16" id="6mw-aS-Zst"/>
+                            <constraint firstItem="sKm-zA-fGp" firstAttribute="trailing" secondItem="UkK-gZ-Lat" secondAttribute="trailing" constant="16" id="I1p-cw-0pf"/>
+                            <constraint firstItem="lhI-QO-B3e" firstAttribute="leading" secondItem="sKm-zA-fGp" secondAttribute="leading" constant="16" id="IWE-tG-Xw2"/>
+                            <constraint firstItem="sKm-zA-fGp" firstAttribute="trailing" secondItem="BZk-9v-akY" secondAttribute="trailing" constant="16" id="LtP-fa-uRJ"/>
+                            <constraint firstItem="3Jw-zf-tyy" firstAttribute="top" secondItem="UkK-gZ-Lat" secondAttribute="bottom" id="RHa-xB-Szq"/>
+                            <constraint firstItem="sKm-zA-fGp" firstAttribute="bottom" secondItem="3Jw-zf-tyy" secondAttribute="bottom" id="aPH-6d-bgL"/>
+                            <constraint firstItem="3Jw-zf-tyy" firstAttribute="leading" secondItem="sKm-zA-fGp" secondAttribute="leading" constant="16" id="kqr-so-TbD"/>
+                            <constraint firstItem="UkK-gZ-Lat" firstAttribute="top" secondItem="sKm-zA-fGp" secondAttribute="top" id="mGs-XI-9wv"/>
+                            <constraint firstItem="3Jw-zf-tyy" firstAttribute="bottom" secondItem="sKm-zA-fGp" secondAttribute="bottom" id="p2C-li-uFM"/>
+                            <constraint firstItem="BZk-9v-akY" firstAttribute="leading" secondItem="sKm-zA-fGp" secondAttribute="leading" constant="16" id="qfH-Gz-D3h"/>
+                            <constraint firstItem="sKm-zA-fGp" firstAttribute="trailing" secondItem="3Jw-zf-tyy" secondAttribute="trailing" constant="16" id="vFu-vH-m1T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sKm-zA-fGp"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fSK-dV-JSI" appends="YES" id="UCd-gW-HjY"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3Jw-zf-tyy" id="FZU-On-5Ed"/>
+                        <outlet property="textField" destination="lhI-QO-B3e" id="SxI-GN-6En"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRg-oq-91o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fSK-dV-JSI">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="een-QQ-4YC" id="CZd-Hc-OTq"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="972" y="136.69950738916256"/>
         </scene>
     </scenes>
 </document>

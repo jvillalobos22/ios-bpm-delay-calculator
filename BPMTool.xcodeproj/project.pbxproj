@@ -17,6 +17,7 @@
 		8725D3E9237A501100994E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8725D3E7237A501100994E52 /* LaunchScreen.storyboard */; };
 		8725D3F4237A501200994E52 /* BPMToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725D3F3237A501200994E52 /* BPMToolTests.swift */; };
 		8725D3FF237A501200994E52 /* BPMToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725D3FE237A501200994E52 /* BPMToolUITests.swift */; };
+		87353BA62381D40C00908E40 /* NoteMeasurementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87353BA52381D40C00908E40 /* NoteMeasurementCell.swift */; };
 		8783904E23812A2100F68FC2 /* BeatCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783904D23812A2100F68FC2 /* BeatCalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		8725D3FA237A501200994E52 /* BPMToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPMToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8725D3FE237A501200994E52 /* BPMToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMToolUITests.swift; sourceTree = "<group>"; };
 		8725D400237A501200994E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87353BA52381D40C00908E40 /* NoteMeasurementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteMeasurementCell.swift; path = BPMTool/NoteMeasurementCell.swift; sourceTree = "<group>"; };
 		8783904D23812A2100F68FC2 /* BeatCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		8725D3D0237A501000994E52 = {
 			isa = PBXGroup;
 			children = (
+				87353BA52381D40C00908E40 /* NoteMeasurementCell.swift */,
 				8725D3DB237A501000994E52 /* BPMTool */,
 				8725D3F2237A501200994E52 /* BPMToolTests */,
 				8725D3FD237A501200994E52 /* BPMToolUITests */,
@@ -289,6 +292,7 @@
 				8709D5DA2380E76100EA0B04 /* NoteLength.swift in Sources */,
 				8709D5D82380E6E800EA0B04 /* BeatCalculator.swift in Sources */,
 				8725D3DD237A501000994E52 /* AppDelegate.swift in Sources */,
+				87353BA62381D40C00908E40 /* NoteMeasurementCell.swift in Sources */,
 				8725D3DF237A501000994E52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

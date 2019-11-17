@@ -16,33 +16,27 @@ class BeatCalculatorViewController: UIViewController, UITableViewDataSource {
         
     var calculator = BeatCalculator(withStartingBpm: 124.0)
     
-    let CellIdentifier = "BeatCalculationCell"
+    let CellIdentifier = "com.juanton.NoteMeasurementCell"
     
-    let data = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
-        "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
-        "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
-        "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
-        "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.text = String(124)
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: CellIdentifier)
     }
 
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! NoteMeasurementCell
         
-        print("indexPath.row", indexPath.row)
         let sortedNoteLengths = calculator.getSortedNoteLengths();
         
         let calculatedNoteLength = sortedNoteLengths[indexPath.row].getNoteLength(forBpm: calculator.bpmValue)
         
         let formattedNoteLength = numberFormatter.string(from: NSNumber(value: calculatedNoteLength.value))
         
-        cell.textLabel?.text = "\(sortedNoteLengths[indexPath.row].noteString): \(formattedNoteLength!)ms"
+//        cell.textLabel?.text = "\(sortedNoteLengths[indexPath.row].noteString): \(formattedNoteLength!)ms"
         
+        cell.noteLengthLabel?.text = sortedNoteLengths[indexPath.row].noteString
+        cell.noteMeasurementLabel?.text = "\(formattedNoteLength!)ms"
         return cell
     }
     

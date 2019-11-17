@@ -45,20 +45,20 @@ class ViewController: UIViewController,  UITextFieldDelegate {
     }
     
     override func viewDidLoad() {
-         super.viewDidLoad()
-        
+        super.viewDidLoad()
+
         textField.text = String(124)
         updateNoteValueLabels(for: noteLengthLabels)
-     }
+    }
     
-     @IBAction func bpmFieldChanged(_ textField: UITextField) {
+    @IBAction func bpmFieldChanged(_ textField: UITextField) {
         if let text = textField.text, let value = Double(text) {
             setBpmValueAndRecalculate(with: value)
         } else {
             setBpmValueAndRecalculate(with: nil)
         }
-     }
-    
+    }
+
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
     }

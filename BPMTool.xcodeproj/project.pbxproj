@@ -80,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8709D5DC2380F69B00EA0B04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8709D5D92380E76100EA0B04 /* NoteLength.swift */,
+				8709D5D72380E6E800EA0B04 /* BeatCalculator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8725D3D0237A501000994E52 = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +112,10 @@
 		8725D3DB237A501000994E52 /* BPMTool */ = {
 			isa = PBXGroup;
 			children = (
-				8709D5D92380E76100EA0B04 /* NoteLength.swift */,
+				8709D5DC2380F69B00EA0B04 /* Model */,
 				8725D3DC237A501000994E52 /* AppDelegate.swift */,
 				8725D3DE237A501000994E52 /* SceneDelegate.swift */,
 				8725D3E0237A501000994E52 /* ViewController.swift */,
-				8709D5D72380E6E800EA0B04 /* BeatCalculator.swift */,
 				8725D3E2237A501000994E52 /* Main.storyboard */,
 				8725D3E5237A501100994E52 /* Assets.xcassets */,
 				8725D3E7237A501100994E52 /* LaunchScreen.storyboard */,

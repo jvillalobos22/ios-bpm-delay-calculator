@@ -53,58 +53,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/8 Beat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtJ-o7-Hlc">
-                                <rect key="frame" x="20" y="363.66666666666669" width="379" height="28.333333333333314"/>
+                                <rect key="frame" x="20" y="368" width="379" height="28.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/16 Beat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zX-ko-iJ5">
-                                <rect key="frame" x="20" y="400" width="379" height="28.666666666666686"/>
+                                <rect key="frame" x="20" y="404.33333333333331" width="379" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/32 Beat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orP-X6-CGv">
-                                <rect key="frame" x="20" y="436.66666666666669" width="379" height="28.333333333333314"/>
+                                <rect key="frame" x="20" y="441" width="379" height="28.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/64 Beat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-w8-lIj">
-                                <rect key="frame" x="20" y="473" width="379" height="28.666666666666686"/>
+                                <rect key="frame" x="20" y="477.33333333333331" width="379" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/8 Beat: --ms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEh-O7-RYS">
-                                <rect key="frame" x="20" y="363.66666666666669" width="379" height="28.333333333333314"/>
+                                <rect key="frame" x="20" y="368" width="379" height="28.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/16 Beat: --ms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb2-dk-ume">
-                                <rect key="frame" x="20" y="400" width="379" height="28.666666666666686"/>
+                                <rect key="frame" x="20" y="404.33333333333331" width="379" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/32 Beat: --ms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdf-jH-nZX">
-                                <rect key="frame" x="20" y="436.66666666666669" width="379" height="28.333333333333314"/>
+                                <rect key="frame" x="20" y="441" width="379" height="28.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="1/64 Beat: --ms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDt-Wa-WRy">
-                                <rect key="frame" x="20" y="473" width="379" height="28.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1/64 Beat: --ms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDt-Wa-WRy">
+                                <rect key="frame" x="20" y="477.33333333333331" width="379" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/4 Beat: --ms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idV-5L-6ae">
-                                <rect key="frame" x="20" y="331.66666666666669" width="379" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="FGO-47-RNu"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="331.66666666666669" width="379" height="28.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -114,21 +111,22 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="JtJ-o7-Hlc" firstAttribute="leading" secondItem="Jb2-dk-ume" secondAttribute="leading" id="07j-MC-2w2"/>
-                            <constraint firstItem="orP-X6-CGv" firstAttribute="baseline" secondItem="Gdf-jH-nZX" secondAttribute="baseline" id="0G3-hG-zrH"/>
                             <constraint firstItem="FEh-O7-RYS" firstAttribute="trailing" secondItem="Jb2-dk-ume" secondAttribute="trailing" id="1EH-Bd-a27"/>
                             <constraint firstItem="lh8-w8-lIj" firstAttribute="trailing" secondItem="rDt-Wa-WRy" secondAttribute="trailing" id="2Zw-g8-Ja4"/>
                             <constraint firstItem="3gn-HT-xM0" firstAttribute="top" secondItem="q1d-lv-trk" secondAttribute="bottom" constant="10" id="8P1-lK-QgH"/>
+                            <constraint firstItem="lh8-w8-lIj" firstAttribute="top" secondItem="Gdf-jH-nZX" secondAttribute="bottom" constant="8" id="8VS-wT-fWE"/>
                             <constraint firstItem="q1d-lv-trk" firstAttribute="top" secondItem="nXc-Mn-8si" secondAttribute="bottom" constant="98" id="Bdm-yc-qA4"/>
                             <constraint firstItem="PHC-Y8-I8p" firstAttribute="trailing" secondItem="aRd-av-wfe" secondAttribute="trailing" id="CFk-Gz-1up"/>
+                            <constraint firstItem="FEh-O7-RYS" firstAttribute="top" secondItem="idV-5L-6ae" secondAttribute="bottom" constant="8" id="Cfr-Rx-TPc"/>
                             <constraint firstItem="Jb2-dk-ume" firstAttribute="trailing" secondItem="8zX-ko-iJ5" secondAttribute="trailing" id="Dcr-c1-qUB"/>
                             <constraint firstItem="JtJ-o7-Hlc" firstAttribute="baseline" secondItem="FEh-O7-RYS" secondAttribute="baseline" id="DjU-cW-kz1"/>
                             <constraint firstItem="idV-5L-6ae" firstAttribute="top" secondItem="aRd-av-wfe" secondAttribute="bottom" constant="8" id="Guw-58-N6U"/>
                             <constraint firstItem="8zX-ko-iJ5" firstAttribute="leading" secondItem="orP-X6-CGv" secondAttribute="leading" id="HIb-4M-5jk"/>
                             <constraint firstItem="PHC-Y8-I8p" firstAttribute="leading" secondItem="3gn-HT-xM0" secondAttribute="leading" id="Ip2-fn-0WS"/>
                             <constraint firstItem="rDt-Wa-WRy" firstAttribute="leading" secondItem="lh8-w8-lIj" secondAttribute="leading" id="NYA-XQ-d9t"/>
+                            <constraint firstItem="orP-X6-CGv" firstAttribute="top" secondItem="Jb2-dk-ume" secondAttribute="bottom" constant="8" id="RKX-WU-MQb"/>
                             <constraint firstItem="nXc-Mn-8si" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T8a-x3-gzX"/>
                             <constraint firstItem="rDt-Wa-WRy" firstAttribute="top" secondItem="orP-X6-CGv" secondAttribute="bottom" constant="8" id="TDW-3f-Rg1"/>
-                            <constraint firstItem="8zX-ko-iJ5" firstAttribute="baseline" secondItem="Jb2-dk-ume" secondAttribute="baseline" id="UDk-yy-z3u"/>
                             <constraint firstItem="orP-X6-CGv" firstAttribute="trailing" secondItem="Gdf-jH-nZX" secondAttribute="trailing" id="Udf-8L-gMt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PHC-Y8-I8p" secondAttribute="trailing" constant="-40" id="W0K-MV-Czd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3gn-HT-xM0" secondAttribute="trailing" constant="20" id="Z0b-be-WU0"/>
@@ -137,6 +135,8 @@
                             <constraint firstItem="Jb2-dk-ume" firstAttribute="top" secondItem="JtJ-o7-Hlc" secondAttribute="bottom" constant="8" id="cJv-xn-pna"/>
                             <constraint firstItem="idV-5L-6ae" firstAttribute="leading" secondItem="FEh-O7-RYS" secondAttribute="leading" id="cTk-ab-nSO"/>
                             <constraint firstItem="PHC-Y8-I8p" firstAttribute="leading" secondItem="aRd-av-wfe" secondAttribute="leading" id="cVC-fy-REG"/>
+                            <constraint firstItem="Gdf-jH-nZX" firstAttribute="top" secondItem="8zX-ko-iJ5" secondAttribute="bottom" constant="8" id="caH-fo-GRT"/>
+                            <constraint firstItem="8zX-ko-iJ5" firstAttribute="top" secondItem="FEh-O7-RYS" secondAttribute="bottom" constant="8" id="cl9-Fr-2Xj"/>
                             <constraint firstItem="Gdf-jH-nZX" firstAttribute="leading" secondItem="lh8-w8-lIj" secondAttribute="leading" id="dxA-Ew-F9H"/>
                             <constraint firstItem="3gn-HT-xM0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dxV-Zf-xrb"/>
                             <constraint firstItem="PHC-Y8-I8p" firstAttribute="top" secondItem="3gn-HT-xM0" secondAttribute="bottom" constant="8" symbolic="YES" id="euF-bW-sYn"/>
@@ -150,7 +150,6 @@
                             <constraint firstItem="orP-X6-CGv" firstAttribute="trailing" secondItem="rDt-Wa-WRy" secondAttribute="trailing" id="ueQ-mj-9Vb"/>
                             <constraint firstItem="JtJ-o7-Hlc" firstAttribute="trailing" secondItem="FEh-O7-RYS" secondAttribute="trailing" id="uzH-Q4-f5E"/>
                             <constraint firstItem="nXc-Mn-8si" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wq9-3E-X3V"/>
-                            <constraint firstItem="lh8-w8-lIj" firstAttribute="baseline" secondItem="rDt-Wa-WRy" secondAttribute="baseline" id="yw0-sd-mkQ"/>
                             <constraint firstItem="JtJ-o7-Hlc" firstAttribute="leading" secondItem="FEh-O7-RYS" secondAttribute="leading" id="yx4-iC-cVa"/>
                             <constraint firstItem="orP-X6-CGv" firstAttribute="top" secondItem="8zX-ko-iJ5" secondAttribute="bottom" constant="8" id="zNK-my-sGD"/>
                             <constraint firstItem="idV-5L-6ae" firstAttribute="trailing" secondItem="FEh-O7-RYS" secondAttribute="trailing" id="zdF-Kp-uOC"/>
@@ -162,13 +161,13 @@
                     </view>
                     <connections>
                         <outlet property="textField" destination="3gn-HT-xM0" id="x4M-In-oHH"/>
-                        <outletCollection property="noteLengthLabels" destination="PHC-Y8-I8p" collectionClass="NSMutableArray" id="ZP7-Oj-Pfh"/>
-                        <outletCollection property="noteLengthLabels" destination="aRd-av-wfe" collectionClass="NSMutableArray" id="bT2-Cf-k27"/>
-                        <outletCollection property="noteLengthLabels" destination="idV-5L-6ae" collectionClass="NSMutableArray" id="oUn-HI-uRF"/>
-                        <outletCollection property="noteLengthLabels" destination="FEh-O7-RYS" collectionClass="NSMutableArray" id="5i2-Ow-xCn"/>
-                        <outletCollection property="noteLengthLabels" destination="Jb2-dk-ume" collectionClass="NSMutableArray" id="NIr-8Q-LBV"/>
-                        <outletCollection property="noteLengthLabels" destination="Gdf-jH-nZX" collectionClass="NSMutableArray" id="1Gy-UN-srC"/>
-                        <outletCollection property="noteLengthLabels" destination="rDt-Wa-WRy" collectionClass="NSMutableArray" id="xcZ-3n-CHm"/>
+                        <outletCollection property="noteLengthLabels" destination="PHC-Y8-I8p" collectionClass="NSMutableArray" id="tFA-EU-bWi"/>
+                        <outletCollection property="noteLengthLabels" destination="aRd-av-wfe" collectionClass="NSMutableArray" id="5jL-vf-DYk"/>
+                        <outletCollection property="noteLengthLabels" destination="idV-5L-6ae" collectionClass="NSMutableArray" id="FiZ-69-K0e"/>
+                        <outletCollection property="noteLengthLabels" destination="FEh-O7-RYS" collectionClass="NSMutableArray" id="cRE-s0-7ZQ"/>
+                        <outletCollection property="noteLengthLabels" destination="Jb2-dk-ume" collectionClass="NSMutableArray" id="5VE-FN-aqG"/>
+                        <outletCollection property="noteLengthLabels" destination="Gdf-jH-nZX" collectionClass="NSMutableArray" id="I7x-Xn-bZZ"/>
+                        <outletCollection property="noteLengthLabels" destination="rDt-Wa-WRy" collectionClass="NSMutableArray" id="Mnq-1k-odt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

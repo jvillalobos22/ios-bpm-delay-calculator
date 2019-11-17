@@ -16,84 +16,46 @@ let numberFormatter: NumberFormatter = {
     return nf
 }()
 
-//let NoteLength = [
-//    "bar": 1,
-//    "half": 0.5,
-//    "quarter": 0.25,
-//    "eighth": 0.125,
-//    "sixteenth": 0.0625,
-//    "thirtysecondth": 0.03125,
-//    "sixtyfourth": 0.015625
-//]
-
-let noteLengths = [
-    1.0,
-    0.5,
-    0.25,
-    0.125,
-    0.0625,
-    0.03125,
-    0.015625
-]
-
-let noteStrings = [
-    "Whole Beat",
-    "Half Beat",
-    "1/4 Beat",
-    "1/8 Beat",
-    "1/16 Beat",
-    "1/32 Beat",
-    "1/64 Beat"
-]
-
-struct Length {}
-
 class ViewController: UIViewController,  UITextFieldDelegate {
 
     @IBOutlet var noteLengthLabels: [UILabel]!
     
-//    @IBOutlet var quarterNoteLabel: UILabel!
     @IBOutlet var textField: UITextField!
-    
-    var bpmValue: Double? {
-        didSet {
-            updateNoteValueLabels(for: noteLengthLabels)
-        }
-    }
+        
+    var calculator = BeatCalculator(withStartingBpm: 124.0)
     
     func updateNoteValueLabels(for labels: Array<UILabel?>) {
+        let sortedNoteLengths = calculator.noteLengths.sorted(by: { $0.noteCoefficient > $1.noteCoefficient })
         for i in labels.indices {
-            let calculatedNoteLength = calculateNoteValue(forNoteLength: noteLengths[i])
+            let calculatedNoteLength = sortedNoteLengths[i].getNoteLength(forBpm: calculator.bpmValue)
+            
             let formattedNoteLength = numberFormatter.string(from: NSNumber(value: calculatedNoteLength.value))
             
             if let label = labels[i] {
-                label.text = "\(noteStrings[i]): \(formattedNoteLength!)ms"
+                label.text = "\(sortedNoteLengths[i].noteString): \(formattedNoteLength!)ms"
             } else {
                 print("error updating labels")
             }
         }
     }
     
-    func calculateNoteValue(forNoteLength noteLength: Double) -> Measurement<UnitDuration> {
-        if let bpmValue = bpmValue {
-            let timeInMs = (240_000 / bpmValue) * noteLength;
-            return Measurement(value: timeInMs, unit: UnitDuration.milliseconds)
-        } else {
-            return Measurement(value: 0.00, unit: UnitDuration.milliseconds)
-        }
+    func setBpmValueAndRecalculate(with bpm: Double?) {
+        calculator.bpmValue = bpm
+        updateNoteValueLabels(for: noteLengthLabels)
     }
     
     override func viewDidLoad() {
          super.viewDidLoad()
         
-         print("ViewController loaded its view")
+        textField.text = String(124)
+        updateNoteValueLabels(for: noteLengthLabels)
      }
     
      @IBAction func bpmFieldChanged(_ textField: UITextField) {
         if let text = textField.text, let value = Double(text) {
-            bpmValue = value
+            setBpmValueAndRecalculate(with: value)
         } else {
-            bpmValue = nil
+            setBpmValueAndRecalculate(with: nil)
         }
      }
     

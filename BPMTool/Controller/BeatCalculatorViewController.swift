@@ -14,6 +14,8 @@ class BeatCalculatorViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var textField: UITextField!
         
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     var calculator = BeatCalculator(withStartingBpm: 124.0)
     
     let CellIdentifier = "com.juanton.NoteMeasurementCell"
@@ -22,6 +24,8 @@ class BeatCalculatorViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         textField.text = String(124)
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
     }
 
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -33,9 +37,15 @@ class BeatCalculatorViewController: UIViewController, UITableViewDataSource {
         
         let formattedNoteLength = numberFormatter.string(from: NSNumber(value: calculatedNoteLength.value))
         
-//        cell.textLabel?.text = "\(sortedNoteLengths[indexPath.row].noteString): \(formattedNoteLength!)ms"
+        var noteLengthText = sortedNoteLengths[indexPath.row].noteString
         
-        cell.noteLengthLabel?.text = sortedNoteLengths[indexPath.row].noteString
+        if (sortedNoteLengths[indexPath.row].noteType == .dotted) {
+            noteLengthText.append(" dotted")
+        } else if (sortedNoteLengths[indexPath.row].noteType == .triplet) {
+            noteLengthText.append(" triplet")
+        }
+            
+        cell.noteLengthLabel?.text = noteLengthText
         cell.noteMeasurementLabel?.text = "\(formattedNoteLength!)ms"
         return cell
     }
@@ -47,12 +57,11 @@ class BeatCalculatorViewController: UIViewController, UITableViewDataSource {
     
     func setBpmValueAndRecalculate(with bpm: Double?) {
         calculator.bpmValue = bpm
-        print("should call tableView.reloadData()")
+        
         tableView.reloadData()
     }
     
     @IBAction func bpmFieldChanged(_ textField: UITextField) {
-        print("should call bpmFieldChanged(_:)")
         if let text = textField.text, let value = Double(text) {
             setBpmValueAndRecalculate(with: value)
         } else {
@@ -62,5 +71,23 @@ class BeatCalculatorViewController: UIViewController, UITableViewDataSource {
 
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
+    }
+    
+    @IBAction func listTypeChanged(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 0:
+            calculator.lengthsToShow = .base
+        case 1:
+            calculator.lengthsToShow = .dotted
+        case 2:
+            calculator.lengthsToShow = .triplet
+        case 3:
+            calculator.lengthsToShow = .all
+        default:
+            break
+        }
+        
+        tableView.reloadData()
     }
 }
